@@ -1,10 +1,27 @@
+
+   
+
+
 body {
     font-family: 'Berkshire Swash', cursive;
 }
-body {
-    background-color: rgb(56, 56, 56);
+body, main {
+    background-color: rgb(107, 106, 105);
     color: rgb(238, 238, 238);
     line-height: 1.6;
   }
 
+
+  table, tr, th, section{
+    border: 1px solid;
+}
+ 
+ table{
+    border-collapse: collapse;
+    
+  }
+ footer {
+    background-color: crimson;
+  }
+  
   
