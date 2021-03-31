@@ -1,5 +1,11 @@
 
-   
+   header {
+    text-align: center;
+   }
+   img {
+    border-radius: 50%;
+  }
+
 
 
 body {
@@ -22,6 +28,6 @@ body, main {
   }
  footer {
     background-color: crimson;
-  }
   
-  
+
+    }

@@ -1,162 +1,139 @@
 
 main {
     font-family: 'Lobster', cursive;
-    font-size: 50px;
-    background-color: rgb(0, 106, 133);
 }
-header {
-    font-size: 30px;
-}
+
+
 
 header {
-    background-color: rgb(56, 56, 56);
-   color: ivory;
-   padding: 15px;
-   margin: 35px;
-   text-align: center;
-   height: 200px;
-   
+    background-color: rgb(143, 143, 143);
+    
 }
-   header ul li {
-      
-       display:inline;
-       padding: 75px;
-      line-height: 200px;
-       margin: 10px;
-       text-align:center;
-       
-       clear: both;
-   
 
-   }
-   
-  main {
-       width:100%;
-       margin: 35px;
-   }  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: red;
+  }
 
-   body > main > h4 > img {
-       margin: 0;
-       padding: 0;
-       border: 0;
-       font-size: 100%;
-       font: inherit;
-       vertical-align: baseline;
-       width: 1500px;
-   }
 
-   button{
-       display: block;
-       width: 116px;
-       height: 36px;
-       margin-left: 20px;
-       color: white;
-       background-color: black;}
-       main section p{
-       overflow: scroll;
-       max-height: 330px;
-       }
-       button:hover {
-       background-color:rgb(170, 87, 87);
-       animation-duration: 350ms;
-       }
+/**********************************/
 
-   h4 {
-       width:100%;
-       float: inline-end;
-   }
+* {
+    box-sizing: border-box;
+  }
+  
+  .header, .footer {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+  }
+  
+  .column {
+    float: left;
+    padding: 15px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .menu {
+    width: 25%;
+  }
+  
+  .content {
+    width: 75%;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+  }
+  
+  .menu li:hover {
+    background-color: #0099cc;
+  }
 
-   div.column :left{
-       float: left;
-       width: 50%;
-      
-     }
-     div.column :right{
-       float: right;
-       width: 50%;
-      
-     }
 
-     section {
-       width:100%;
-       margin: 35px;
-       padding: 30px;
-     }
-   
-     div .center {margin: 35px;
-       text-align: center;}
-   
-   main .center {
-       margin: 35px;
-       text-align: center;}
-       
-footer{
-   clear: both;
-  height: 200px;
-   background-color: rgb(56, 56, 56);
-   margin: 35px;
-   }
-
-   body > main > section:nth-child(2) > img {
-       margin: 0;
-       padding: 0;
-       border: 0;
-       font-size: 100%;
-       font: inherit;
-       vertical-align: baseline;
-       width: 400px;
-   }
-   #section2 {
-       
-       display:inline-block;
-       width: 50%;
-   }
-
-   body > main > section:nth-child(2) > img {
-       margin: 0;
-       padding: 0;
-       border: 0;
-       font-size: 70%;
-       font: inherit;
-       vertical-align:unset;
-       width: 500px;
-       height: 500px;
-       margin-top: 20px;
-       padding-left: 0px;
-   }
-   
-   body > main > section:nth-child(2) > img {
-       margin: 0;
-       padding: 0;
-       border: 0;
-       font-size: 100%;
-       font: inherit;
-       vertical-align: baseline;
-       width: 500px;
-       height: 500px;
-       border-left-width: 20px;
-       padding-left: 20px;
-   }
-
-   body > main > section:nth-child(2) > img 
-   {
-
-       margin: 0;
-       padding: 0;
-       border: 0;
-       font-size: 100%;
-       font: inherit;
-       vertical-align: baseline;
-       width: 500px;
-       height: 500px;
-       margin-top: 20px;
-       padding-left: 20px;
-   }
-
-   #section2 > button  {    display: block;
-       width: 116px;
-       height: 36px;
-       margin-left: 20px;
-       color: white;
-       background-color: black;
-       margin-top: 30px;}
+  /******************************************/
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+ 

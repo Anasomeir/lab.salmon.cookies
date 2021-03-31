@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>ًWelcome to my website</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <header>
-        
-<ul id="row">
    
-   <li><img src="img/chinook.jpg" alt="logo"></li>
-    <li>Who is us</li>
+   
+    <header>
     
-    <li>our location</li>
-    <li>contact us</li>
-</ul>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+    
+          </ul>
+          <button onclick="location.href='./sales.html'" type="button">click here for the sales</button>
     </header>
 <main>
     
@@ -30,40 +30,91 @@
 
 
 
-       <h4><img src="img/salmon.png" alt="Hero image"></h4> 
-       <section></h4>
-        <img src="img/frosted-cookie.jpg" alt="Sub Banner">
-        <img src="img/cutter.jpeg" alt="Sub Banner">
-        <img src="img/fish.jpg" alt="Sub Banner">
-    </section>
-<img src="img/shirt.jpg" alt="">
-
-    <img class="left-column" src="img/family.jpg" alt="Featured Section Banner">
-    <section id="section2">
-        
-    
-<h2>Our Cookies</h2>
-<p>Cookies began with two visionary founders: grow expert Jai, and entrepreneur Berner, whose Girl Scout Cookies (GSC) remains one of the most sought-after cannabis strains in the world. From the earliest days in a San Francisco garage to global growth, our goal has remained the same: authenticity and innovative genetics.
-
-    Our control of the entire experience from start to finish, seed to sale, sets us apart. We take pride in our in-house cultivation, global varieties, and full lineup of strain-specific products. Cookies is a lifestyle. Join the community as we take it worldwide.s
-</p>
-
-<h2>Safety is
-    Our priority</h2>
-We thank you for your continued support. The safety and well-being of our team, customers, and communities remain our top priority.
-
-As state and local governments begin to ease restrictions, we are taking steps to maintain safe and comfortable environments for our customers and employees.
-
-
-As state and local governments begin to ease restrictions, we are taking steps to maintain safe and comfortable environments for our customers and employees.
-
-In the meantime, you can still enjoy Great American Cookies, as many of our stores remain open for delivery and carryout.
-
-
- <button onclick="location.href='./sales.html'" type="button">click here for the sales</button>
-
-</section>
+    <div class="row">
+        <div class="column">
+          <img src="img/family.jpg" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="img/chinook.jpg" alt="Snow" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="img/cutter.jpeg" alt="Mountains" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="img/frosted-cookie.jpg" alt="Lights" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="img/fish.jpg" alt="Lights" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="img/shirt.jpg" alt="Lights" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="img/salmon.png" alt="Lights" onclick="myFunction(this);">
+          </div>
       </div>
+      
+  
+      <div class="container">
+     
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+       
+        <img id="expandedImg" style="width:100%">
+      
+    
+        <div id="imgtext"></div>
+      </div>
+
+
+
+
+
+
+        <div class="header">
+            <h1>Cookies</h1>
+          </div>
+          
+          <div class="clearfix">
+            <div class="column menu">
+              <ul>
+                <li>Cookies</li>
+                <li>delivery</li>
+                <li>Our Prodacts</li>
+                <li>Our Branches</li>
+              </ul>
+            </div>
+          
+            <div class="column content">
+              <h1>Our Cookies</h1>
+              <p>Cookies began with two visionary founders: grow expert Jai, and entrepreneur Berner, whose Girl Scout Cookies (GSC) remains one of the most sought-after cannabis strains in the world. From the earliest days in a San Francisco garage to global growth, our goal has remained the same: authenticity and innovative genetics.
+
+                Our control of the entire experience from start to finish, seed to sale, sets us apart. We take pride in our in-house cultivation, global varieties, and full lineup of strain-specific products. Cookies is a lifestyle. Join the community as we take it worldwide.</p>
+              <p>Cookies began with two visionary founders: grow expert Jai, and entrepreneur Berner, whose Girl Scout Cookies (GSC) remains one of the most sought-after cannabis strains in the world. From the earliest days in a San Francisco garage to global growth, our goal has remained the same: authenticity and innovative genetics.
+
+                Our control of the entire experience from start to finish, seed to sale, sets us apart. We take pride in our in-house cultivation, global varieties, and full lineup of strain-specific products. Cookies is a lifestyle. Join the community as we take it worldwide.</p>
+            </div>
+          </div>
+          
+          <div class="footer">
+            <p>Safety is
+                Our priority</p>
+
+                <p>
+                    We thank you for your continued support. The safety and well-being of our team, customers, and communities remain our top priority.
+
+                    As state and local governments begin to ease restrictions, we are taking steps to maintain safe and comfortable environments for our customers and employees.
+                    
+                    
+                    As state and local governments begin to ease restrictions, we are taking steps to maintain safe and comfortable environments for our customers and employees.
+                    
+                    In the meantime, you can still enjoy Great American Cookies, as many of our stores remain open for delivery and carryout.
+                </p>
+          
+          
+
+
+
 
 
 
